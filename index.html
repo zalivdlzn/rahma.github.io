@@ -1,0 +1,92 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<div class="container w3-blue">
+<img src="view.PNG" style="width:100%">
+</div>
+
+<div class="w3-bar w3-brown">
+<button class="w3-bar-item w3-button" onclick="openKota('Home')">Home</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Profile')">Profile</button>
+  <button class="w3-bar-item w3-button" onclick="openKota('Citylight')">Citylight</button>
+  <button class="w3-bar-item w3-button" onclick="openKota('Sunset')">Sunset</button>
+  <button class="w3-bar-item w3-button" onclick="openKota('Sunrise')">Sunrise</button>
+  <button class="w3-bar-item w3-button" onclick="openKota('Picture')">Picture</button>
+  
+ </div>
+ <div class="w3-brown" style="width:100%">
+ <div id="Home" class="w3-container kota w3-animate-top" style="display:none">
+ <img src="home.PNG" style="width:100%">
+ 
+</div>
+
+<div id="Profile" class="w3-container kota w3-animate-zoom" style="display:block">
+ <center><h1>Profile</h1>
+ <img src="profile.JPG" style="width:15%">
+ <br>
+ <p>Rahma Apriliani</p>
+ <p>10122131</p>
+ <p>IF 4</p>
+ </div>
+ 
+   <div id="Citylight" class="w3-container kota w3-animate-left" style="display:none">
+ <center> <h1>Citylight</h1>
+ <img src="city.JPG" style="width:20%">
+ <br>
+ <p>a very beautiful view to enjoy at night, the right time to calm down and relax for a moment</p>
+ <div class="w3-half">
+<a href="https://www.youtube.com/watch?v=bCEMBU9Sk98" class="w3-pink w3-round-xxlarge"> 
+<button class="w3-btn w3-grey w3-round-xxlarge">let's see</button>
+</center>
+ </div>
+ 
+ 
+  <div id="Sunset" class="w3-container kota w3-animate-right" style="display:none">
+ <center> <h1>Sunset</h1>
+ <img src="sunset.JPG" style="width:20%">
+ <br>
+ <p>a very beautiful view to enjoy at afternoon, the right time to calm down and relax for a moment</p>
+ <div class="w3-half">
+<a href="https://www.youtube.com/watch?v=e1M6jHcRrlM" class="w3-pink w3-round-xxlarge"> 
+<button class="w3-btn w3-grey w3-round-xxlarge">let's see</button>
+</center>
+ </div>
+ 
+ 
+   <div id="Sunrise" class="w3-container kota w3-animate-opacity" style="display:none">
+ <center> <h1>Sunrise</h1>
+ <img src="sunrise.JPG" style="width:20%">
+ <br>
+ <p>a very beautiful view to enjoy at morning, the right time to calm down and relax for a moment</p>
+ <div class="w3-half">
+<a href="https://www.youtube.com/watch?v=o_kgdCGisso" class="w3-pink w3-round-xxlarge"> 
+<button class="w3-btn w3-grey w3-round-xxlarge">let's see</button>
+</center>
+ </div>
+ 
+ <div id="Picture" class="w3-container kota w3-animate-zoom" style="display:block">
+ <img src="city.JPG" style="width:18%">
+  <img src="citi.JPG" style="width:18%">
+  <img src="sun.JPG" style="width:18%">
+  <img src="set.JPG" style="width:18%">
+  <img src="rise.JPG" style="width:18%">
+  <img src="light.JPG" style="width:18%">
+  <img src="lig.JPG" style="width:18%">
+   <img src="sunrise.JPG" style="width:18%">
+   <img src="sunset.JPG" style="width:18%">
+ <img src="rise.JPG" style="width:18%">
+
+
+ 
+  
+
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namakota).style.display = "block";
+}
+</script>
